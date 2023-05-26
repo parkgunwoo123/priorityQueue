@@ -1,6 +1,4 @@
 import math
-from sys import stdin
-
 
 class PriorityQueueWithMaxHeap:
     def __init__(self):
@@ -137,36 +135,6 @@ class PriorityQueueWithMinHeap:
 
 list1 = PriorityQueueWithMaxHeap()  # list1은 작은 값, list2는 큰 값
 list2 = PriorityQueueWithMinHeap()
-
-count = 0
-for _ in range(int(input())):
-    # count += 1
-    tmp = int(stdin.readline())
-    if tmp == 0:
-        if list1.check(1) == None:
-            print(0)
-        else:
-            a = list1.pop()
-            print(a)
-    else:
-        list1.append(tmp)
-    print(list1)
-    # if list1.check(1) == None:
-    #     list1.append(tmp)
-    #     print(list1.check(1))
-    # else:
-    #     if count % 2 == 0:
-    #         list2.append(tmp)
-    #     else:
-    #         list1.append(tmp)
-    #     tmp2, tmp1 = list2.check(1), list1.check(1)
-    #     if tmp1 > tmp2:
-    #         tmoList = [tmp1, tmp2]
-    #         list1.pop()
-    #         list2.pop()
-    #         list2.append(tmp1)
-    #         list1.append(tmp2)
-    #     print(list1.check(1))
 
 
 
